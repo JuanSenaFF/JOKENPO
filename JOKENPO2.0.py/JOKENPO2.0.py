@@ -52,6 +52,7 @@ def decidindo_vencedor(jogador, maquina):
     elif (jogador_sem_emoji == "PEDRA" and maquina_sem_emoji == "TESOURA") or \
         (jogador_sem_emoji == "TESOURA" and maquina_sem_emoji == "PAPEL") or \
         (jogador_sem_emoji == "PAPEL" and maquina_sem_emoji == "PEDRA"):
+        vitorias_jogador += 1
         return "jogador"
     
     # Caso contrario, a maquina ganhou    
